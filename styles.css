@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-bg :#16191c;
+    --active-bg:#444444;
+    --bg:#666666;
+    --btn-bg:#126e51;
+    --cat-bg:#20327b
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23292e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-width: 330px;
+    max-width: 425px;
+    min-height: 100vh;
+}
+
+nav{
+    height: 60px;
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav i{
+    font-size: 20px;
+    color: white;
+}
+nav img{
+    width: 120px;
+    margin-left: 20px;
+}
+
+nav div button{
+    background-color: var(--btn-bg);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+
+/* anouncement */
+
+.anouncement{
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fefefe;
+    padding: 0px 10px;
+}
+
+.anouncement img{
+    width: 40px;
+}
+
+/* new_launch */
+.new_launch{
+    margin-top: 10px;
+}
+.new_launch p{
+    background-color: var(--btn-bg);
+    margin: 0px 5px;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* cat_div */
+.cat_div{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.cat_div p{
+    color: white;
+    background-color: var(--bg);
+    padding: 10px 20px;
+    border-right: 0.5px solid white;
+    font-size: 14px;
+}
+.cat_div p:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+.cat_div p:last-child{
+    border-radius: 0px 5px 5px 0px;
+    border-right: none;
+}
+/* cat_div2 */
+.cat_div2{
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.cat_div2 p{
+    color: white;
+    background-color: var(--bg);
+    padding: 15px 0px;
+    border-right: 0.5px solid white;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+.cat_div2 p:first-child{
+    background-color: #20327b;
+}
+
+/* casino  */
+.casino{
+background-color: #126e51;
+}
+.casino .div{
+    display: flex;
+    width: fit-content;
+    background-color: #126e51;
+}
+.casino .div p{
+    background-color: var(--btn-bg);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.casino .div p:first-child{
+    background-color: var(--nav-bg);
+}
+
+/* winner .anouncement  */
+.winner{
+    margin-top: 10px;
+}
+.winner > p{
+    background-color: var(--btn-bg);
+    margin: 0px 5px;
+    color: white;
+    padding: 7px;
+    font-weight: 600;
+}
+.winner .card_container{
+    background-color: #16191c;
+    color: #eee;
+}
+.winner .card_container{
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.winner .card{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.winner .card div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
+
+
+/* footer  */
+footer .div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #eee;
+    font-size: 12px;
+    margin: 10px 0px;
+    padding: 20px 0;
+    border : 1px dotted #eee;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+
+
+footer .div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer .div2 p{
+    color: #eee;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.whatsapp{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 80%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* swiper  */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .slide2_img img{
+    height: 400px;
+}
